@@ -1,14 +1,14 @@
 pub struct HttpRequest {
-    pub verb: String,
+    pub method: String,
     pub uri: String,
     pub version: String
     // No headers/body yet
 }
 
 impl HttpRequest {
-    pub fn new(verb: String, uri: String, version: String) -> HttpRequest {
+    pub fn new(method: String, uri: String, version: String) -> HttpRequest {
         HttpRequest {
-            verb: verb,
+            method: method,
             uri: uri,
             version: version
         }
